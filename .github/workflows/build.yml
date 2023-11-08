@@ -16,7 +16,7 @@ jobs:
         os: [ windows-latest, ubuntu-latest, macOS-latest]
         include:
         - os: windows-latest
-          generator: '--preset arm64ec'
+          generator: '-G Ninja --preset arm64ec'
         - os: ubuntu-latest
           generator: '-G "Unix Makefiles"'
         - os: macOS-latest
