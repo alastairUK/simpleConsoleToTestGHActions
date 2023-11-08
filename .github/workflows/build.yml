@@ -17,6 +17,9 @@ jobs:
         include:
         - os: windows-latest
           generator: '"Visual Studio 17 2022"'
+        - os: windows-latest
+          generator: '"Visual Studio 17 2022" -A "ARM64EC"'
+          job_label: Windows-VisualStudio-ARM64EC
         - os: ubuntu-latest
           generator: '"Unix Makefiles"'
         - os: macOS-latest
