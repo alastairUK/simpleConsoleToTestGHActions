@@ -4,7 +4,7 @@
     {
       "name": "base",
       "hidden": true,
-      "generator": "Ninja"
+      "generator": "Visual Studio 17 2022"
     },
     {
       "name": "arm64ec",
@@ -12,7 +12,7 @@
       "displayName": "arm64ec",
       "architecture": {
         "value": "arm64ec",
-        "strategy": "external"
+        "strategy": "set"
       },
       "environment": {
         "CXXFLAGS": "/arm64EC",
