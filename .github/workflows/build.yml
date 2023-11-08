@@ -20,7 +20,7 @@ jobs:
           shell: cmd
           
         - name: Configure CMake
-          run: cmake -B ${{github.workspace}}/build --preset arm64EC
+          run: cmake -B ${{github.workspace}}/build --preset arm64ec
           shell: cmd
 
         - name: Build
