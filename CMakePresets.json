@@ -4,7 +4,7 @@
     {
       "name": "base",
       "hidden": true,
-      "generator": "Visual Studio 16 2019"
+      "generator": "Visual Studio 17 2022"
     },
     {
       "name": "arm64ec",
