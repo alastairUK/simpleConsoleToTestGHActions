@@ -15,15 +15,11 @@ jobs:
       steps:
         - uses: actions/checkout@v3
 
-        - name: Config Enviroment
-          run: call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm64
+        - name: Do stuff
+          run: | 
+            call "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" amd64_arm64
+            cmake -B ${{github.workspace}}/build --preset arm64ec
+            cmake --build ${{github.workspace}}/build --config Release
           shell: cmd
           
-        - name: Configure CMake
-          run: cmake -B ${{github.workspace}}/build --preset arm64ec
-          shell: cmd
-
-        - name: Build
-          run: cmake --build ${{github.workspace}}/build --config Release
-          shell: cmd
 
