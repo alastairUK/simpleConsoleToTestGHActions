@@ -13,10 +13,6 @@
       "architecture": {
         "value": "arm64ec",
         "strategy": "set"
-      },
-      "environment": {
-        "CXXFLAGS": "/arm64EC",
-        "CFLAGS": "/arm64EC"
       }
     }
   ]
