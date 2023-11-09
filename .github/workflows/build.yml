@@ -19,6 +19,5 @@ jobs:
           run: | 
             cmake -B ${{github.workspace}}/build --preset arm64ec -DCMAKE_SYSTEM_VERSION=10.0.22618.0
             cmake --build ${{github.workspace}}/build --config Release
-          shell: cmd
           
 
