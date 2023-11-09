@@ -24,6 +24,7 @@ jobs:
             echo %PATH%
             call cl ?
             cmake --debug-output -B ${{github.workspace}}/build --preset arm64ec
+            type CMakeFiles\CMakeConfigureLog.yaml
             cmake --build ${{github.workspace}}/build --config Release
           shell: cmd
           
