@@ -17,7 +17,7 @@ jobs:
 
         - name: Do stuff
           run: | 
-            cmake -B ${{github.workspace}}/build --preset arm64ec -DCMAKE_SYSTEM_VERSION=10.0.22621
+            cmake -B ${{github.workspace}}/build --preset arm64ec -DCMAKE_SYSTEM_VERSION=10
             cmake --build ${{github.workspace}}/build --config Release
           
 
